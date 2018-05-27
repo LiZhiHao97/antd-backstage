@@ -1,12 +1,11 @@
 import React from 'react'
-import { Menu, Icon, Button } from 'antd'
+import { Menu, Icon } from 'antd'
 
 import './backstageMenu.scss'
 
 class BackstageMenu extends React.Component {
   
   render () {
-    const SubMenu = Menu.SubMenu
     return (
         <Menu
           className="backstage-menu"
