@@ -4,6 +4,7 @@ import registerServiceWorker from './registerServiceWorker'
 import store from './redux/stores'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { Provider } from 'react-redux'
+import Login from './container/login/login'
 import Layout from './components/layout/layout'
 import Product from './container/product/product'
 
@@ -15,6 +16,7 @@ ReactDOM.render(
     <BrowserRouter>
       <React.Fragment>
         <Switch>
+          <Route path="/login" component={Login} />
           <Layout>
             <Route path="/product" component={Product} />
           </Layout>

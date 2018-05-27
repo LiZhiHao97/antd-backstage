@@ -1,5 +1,6 @@
 import React from 'react'
 import { Menu, Icon } from 'antd'
+import { Link } from 'react-router-dom'
 
 import './backstageMenu.scss'
 
@@ -16,8 +17,10 @@ class BackstageMenu extends React.Component {
           inlineCollapsed={this.props.collapsed}
         >
           <Menu.Item key="1">
-            <Icon type="pie-chart" />
-            <span>产品列表</span>
+            <Link to="/product">
+              <Icon type="pie-chart" />
+              <span>产品列表</span>
+            </Link>
           </Menu.Item>
         </Menu>
     )
