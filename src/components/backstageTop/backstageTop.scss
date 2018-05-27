@@ -1,0 +1,19 @@
+.backstage-top {
+  height: 64px;
+  box-shadow: 0 1px 4px rgba(0,21,41,.08);
+  
+  .menu-btn {
+    background: none;
+    outline: none;
+    border: none;
+    width: 68px;
+    height: 100%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s background;
+
+    &:hover {
+      background: #e9f7fe;
+    }
+  }
+}
