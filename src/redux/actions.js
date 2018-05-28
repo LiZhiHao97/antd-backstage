@@ -15,11 +15,11 @@ export function loadData (userInfo) {
 
 export function login({ user, pwd }) {
   if (!user || !pwd) {
-    return errorMsg('用户名密码不得为空')
+    return errorMsg('用户名或密码不得为空')
   }
 
   return dispatch => {
-    axios.post('/user.login', { user, pwd })
+    axios.post('/user/login', { user, pwd })
       .then(res => {
         if (res.status === 200 && res.data.code === 0) {
           dispatch(loginSuccess(res.data.data))

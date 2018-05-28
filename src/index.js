@@ -17,9 +17,9 @@ ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
       <React.Fragment>
+        <AuthRoute />
         <Switch>
           <Route path="/login" component={Login} />
-          <AuthRoute />
           <Layout>
             <Route path="/product" component={Product} />
           </Layout>

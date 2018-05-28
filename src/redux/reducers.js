@@ -11,7 +11,7 @@ const initState = {
 export function user (state = initState, action) {
   switch (action.type) {
     case ActionTypes.LOGIN_SUCCESS:
-      return { ...state, msg: '', redirectTo: '/product', isAuth: true }
+      return { ...state, msg: '', redirectTo: '/product', isAuth: true, ...action.payload }
     case ActionTypes.LOAD_DATA: 
       return { ...state, ...action.payload }
     case ActionTypes.ERROR_MSG:
