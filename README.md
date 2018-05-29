@@ -1,3 +1,3 @@
-# 技术站
+# 技术栈
 
 React+Redux+React-Router4+Express+MongoDB
